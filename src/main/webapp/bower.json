@@ -1,0 +1,12 @@
+{
+    "name": "Anathec",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular": "latest",
+        "angular-resource": "latest",
+        "angular-route": "latest",
+        "angular-bootstrap": "latest",
+        "sockjs": "latest",
+        "stomp-websocket": "latest"
+    }
+}

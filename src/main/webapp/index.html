@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="presentationApp">
+<head>
+    <title>Spring 4 Presentation</title>
+    <meta charset="UTF-8">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <script src="/js/libs/angular/angular.js"></script>
+    <script src="/js/libs/angular-route/angular-route.js"></script>
+    <script src="/js/libs/angular-resource/angular-resource.js"></script>
+    <script src="/js/libs/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="/js/libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/js/libs/sockjs/sockjs.js"></script>
+    <script src="/js/libs/stomp-websocket/lib/stomp.js"></script>
+    <script src="/js/application.js"></script>
+    <script src="/js/services.js"></script>
+    <script src="/js/controllers.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Spring Framework 4</a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-navbar-collapse">
+        <!--<ul class="nav navbar-nav">-->
+            <!--<li class="active"><a href="#"><span class="glyphicon glyphicon-home">Accueil</span></a></li>-->
+        <!--</ul>-->
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span></a></li>
+        </ul>
+    </div>
+</nav>
+
+<div ng-view class="container"></div>
+</body>
+</html>

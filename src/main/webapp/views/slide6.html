@@ -1,0 +1,24 @@
+<h1>Lambdas</h1>
+
+<h3>Convention's ready in Spring APIs</h3>
+
+<ul>
+    <li>JdbcTemplate</li>
+    <ul>
+        <li><b>PreparedStatementSetter:</b> void setValues(PreparedStatement ps) throws SQLException</li>
+        <li><b>RowMapper:</b> Object mapRow(ResultSet rs, int rowNum) throws SQLException</li>
+    </ul>
+    <li>JmsTemplate</li>
+    <ul>
+        <li><b>MessageCreator:</b> Message createMessage(Session session) throws JMSException</li>
+    </ul>
+    <li>TransactionTemplate + TransactionCallback, etc</li>
+</ul>
+
+<h3>Lambdas with Spring's JdbcTemplate example</h3>
+
+<h3>JSR-310 Date and Time</h3>
+
+<a href="http://download.java.net/jdk8/docs/api/java/time/LocalDate.html" target="_blank">LocalDate API</a>
+
+<h3>Repeatable Annotations</h3>

@@ -1,0 +1,13 @@
+<div ng-controller="ChatCtrl">
+    <form name="form" role="form" class="form-inline">
+        <input type="text" ng-model="text" placeholder="input message to send" class="form-control"  />
+        <button ng-click="send()" class="btn btn-default">Send</button>
+        <button ng-click="sendMe()" class="btn btn-default">Send to me</button>
+    </form>
+
+    <table class="table table-striped">
+        <tr ng-repeat="message in messages">
+            <td>{{message}}</td>
+        </tr>
+    </table>
+</div>
